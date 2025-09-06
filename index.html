@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony's Workout Tracker</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Anthony's Workout Tracker</h1>
+    <button id="settingsBtn">⚙️</button>
+  </header>
+
+  <main>
+    <label for="daySelect">Choose Day:</label>
+    <select id="daySelect">
+      <option value="1">Day 1 – Chest</option>
+      <option value="2">Day 2 – Back + Core</option>
+      <option value="3">Day 3 – Conditioning + Core</option>
+      <option value="4">Day 4 – Chest + Back</option>
+      <option value="5">Day 5 – Full Body</option>
+    </select>
+
+    <div id="exerciseList"></div>
+
+    <button id="saveBtn">Save Workout</button>
+    <button id="exportBtn">Export CSV</button>
+  </main>
+
+  <div id="popup" class="popup"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
